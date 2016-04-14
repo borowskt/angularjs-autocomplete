@@ -261,6 +261,7 @@
 
     inputEl.addEventListener('blur', function() {
       if (isBlurLocked()) {
+        scope.inputEl.value = '';
         hideAutoselect(scope);
       } else {
         inputEl.focus();
